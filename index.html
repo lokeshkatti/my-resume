@@ -7,56 +7,72 @@
     <style>
         body { 
             font-family: Arial, sans-serif; 
-            line-height: 1.5; 
+            line-height: 1.4; 
             max-width: 850px; 
             margin: auto; 
-            padding: 40px; 
+            padding: 20px; 
             color: #000; 
             background-color: #fff; 
         }
         header { 
             text-align: center; 
-            margin-bottom: 30px; 
+            margin-bottom: 15px; 
         }
-        h1 { margin: 0; font-size: 26px; text-transform: uppercase; letter-spacing: 1px; }
-        .contact-info { font-size: 14px; margin-top: 8px; }
+        h1 { margin: 0; font-size: 24px; text-transform: uppercase; }
+        
+        /* Single Line Contact Styling */
+        .contact-info { 
+            font-size: 12.5px; 
+            margin-top: 5px; 
+            color: #333;
+            word-spacing: 2px;
+        }
         .contact-info a { color: #000; text-decoration: none; }
         
-        section { margin-top: 20px; }
+        section { margin-top: 15px; }
         h2 { 
             font-size: 16px; 
             text-transform: uppercase; 
-            margin-bottom: 8px; 
-            border: none; 
+            margin-bottom: 5px; 
+            border-bottom: 1px solid #000; 
             font-weight: bold;
-            color: #000;
         }
         
-        /* Summary Alignment Fix */
-        .summary-text { 
-            text-align: left; /* Ensures natural left alignment */
-            font-size: 14px;
-            margin: 0;
-        }
-
-        .item-row { display: flex; justify-content: space-between; font-weight: bold; margin-top: 12px; }
+        .summary-text { text-align: left; font-size: 14px; margin: 0; }
+        .item-row { display: flex; justify-content: space-between; font-weight: bold; margin-top: 10px; font-size: 14px; }
         .location-date { text-align: right; font-weight: normal; font-style: italic; }
         
         ul { padding-left: 20px; margin: 5px 0; }
-        li { margin-bottom: 4px; font-size: 14px; }
-        p { margin: 4px 0; font-size: 14px; }
+        li { margin-bottom: 3px; font-size: 14px; }
+        p { margin: 3px 0; font-size: 14px; }
 
-        .download-container { text-align: center; margin-top: 20px; }
-        .download-btn {
-            border: 1px solid #000;
-            color: #000;
-            padding: 6px 12px;
-            text-decoration: none;
-            border-radius: 2px;
-            font-size: 12px;
-            transition: 0.3s;
+        /* Professional Styled Button */
+        .download-container { 
+            text-align: center; 
+            margin-top: 25px; 
+            padding-top: 15px; 
+            border-top: 1px dashed #ccc; 
         }
-        .download-btn:hover { background: #000; color: #fff; }
+        .download-btn {
+            background-color: #2c3e50;
+            color: white;
+            padding: 8px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s;
+            font-size: 13px;
+        }
+        .download-btn:hover {
+            background-color: #34495e;
+            cursor: pointer;
+        }
+        
+        @media print {
+            .download-container { display: none; }
+            body { padding: 10px; }
+        }
     </style>
 </head>
 <body>
@@ -64,12 +80,7 @@
     <header>
         <h1>LOKESH KATTI</h1>
         <div class="contact-info">
-            +91 9550602264 | <a href="mailto:lokeshlokesh73494@gmail.com">lokeshlokesh73494@gmail.com</a><br>
-            <a href="https://linkedin.com/in/katti-lokesh">linkedin.com/in/katti-lokesh</a> | 
-            <a href="https://github.com/lokeshkatti">github.com/lokeshkatti</a>
-        </div>
-        <div class="download-container">
-            <a href="Lokesh_SoftwareEngineer_Resume.pdf" download class="download-btn">Download PDF Resume</a>
+            +91 9550602264 | <a href="mailto:lokeshlokesh73494@gmail.com">lokeshlokesh73494@gmail.com</a> | <a href="https://linkedin.com/in/katti-lokesh">linkedin.com/in/katti-lokesh</a> | <a href="https://github.com/lokeshkatti">github.com/lokeshkatti</a>
         </div>
     </header>
 
@@ -89,22 +100,16 @@
 
     <section>
         <h2>PROJECTS</h2>
-        <div class="item-row">
-            <span>AI-Driven Hospital Workforce Scheduling and Management System</span>
-        </div>
+        <div class="item-row"><span>AI-Driven Hospital Workforce Scheduling and Management System</span></div>
         <ul>
-            <li>Developed a full-stack automated scheduling solution using Python (Flask) and MongoDB.</li>
-            <li>Implemented Constraint Satisfaction Problem (CSP) algorithms to dynamically assign shifts.</li>
-            <li>Designed a secure Role-Based Access Control (RBAC) system for staff management.</li>
+            <li>Developed a full-stack automated scheduling solution using Python (Flask) and MongoDB. [cite: 13]</li>
+            <li>Implemented CSP algorithms for dynamic shift assignment and secure RBAC for staff. [cite: 14, 15]</li>
         </ul>
 
-        <div class="item-row">
-            <span>Serverless Cloud Resume Website (AWS & DevOps)</span>
-        </div>
+        <div class="item-row"><span>Serverless Cloud Resume Website (AWS & DevOps)</span></div>
         <ul>
-            <li>Hosted a high-availability static website using AWS S3 and CloudFront.</li>
-            <li>Implemented a CI/CD pipeline via GitHub Actions for automated deployment.</li>
-            <li>Configured SSL/TLS certificates for secure HTTPS access.</li>
+            <li>Hosted static website using AWS S3 and CloudFront with SSL/TLS via ACM. [cite: 19, 20]</li>
+            <li>Implemented a CI/CD workflow via GitHub Actions for automated S3 synchronization. [cite: 21]</li>
         </ul>
     </section>
 
@@ -114,46 +119,41 @@
             <span>B.Tech in Computer Science Engineering</span>
             <span class="location-date">2021-2025</span>
         </div>
-        <p>Siddharth Institute of Engineering and Technology, Puttur, AP | CGPA: 8.99</p>
+        <p>Siddharth Institute of Engineering and Technology, Puttur, AP | CGPA: 8.99 [cite: 23, 24]</p>
 
         <div class="item-row">
             <span>Intermediate (M.P.C)</span>
             <span class="location-date">2019-2021</span>
         </div>
-        <p>Sri Chaithanya Junior College, Kavali, AP | Marks: 886</p>
+        <p>Sri Chaithanya Junior College, Kavali, AP | Marks: 886 [cite: 25]</p>
 
         <div class="item-row">
             <span>Secondary School Certificate (SSC)</span>
             <span class="location-date">2018-2019</span>
         </div>
-        <p>8th Ward Municipal High School, Kavali, AP | CGPA: 9.2</p>
+        <p>8th Ward Municipal High School, Kavali, AP | CGPA: 9.2 [cite: 26, 27]</p>
     </section>
 
     <section>
-        <h2>CERTIFICATIONS</h2>
-        <ul>
-            <li>IBM Certified - Project Management Fundamentals</li>
-            <li>NPTEL Certified - The Joy of Computing Using Python</li>
-            <li>CSEDGE Certified - Java Programming</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>INTERNSHIP</h2>
+        <h2>INTERNSHIP & CERTIFICATIONS</h2>
         <div class="item-row">
             <span>Java Developer Intern | CSEDGE</span>
             <span class="location-date">May 2024 - Jun 2024</span>
         </div>
         <ul>
-            <li>Developed functional utility applications applying Core Java concepts.</li>
-            <li>Strengthened understanding of Object-Oriented Programming (OOP) principles.</li>
+            <li>Developed utility applications using Core Java and strengthened OOP principles. [cite: 33, 34, 35]</li>
+            <li>Certifications: IBM Project Management, NPTEL Python, CSEDGE Java. [cite: 29, 30, 31]</li>
         </ul>
     </section>
 
     <section>
         <h2>LANGUAGES</h2>
-        <p>English, Telugu</p>
+        <p>English, Telugu [cite: 37]</p>
     </section>
+
+    <div class="download-container">
+        <a href="Lokesh_SoftwareEngineer_Resume.pdf" download class="download-btn">Download PDF Resume</a>
+    </div>
 
 </body>
 </html>
