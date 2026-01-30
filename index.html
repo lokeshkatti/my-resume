@@ -3,163 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Resume | [Lokesh_Katti]</title>
+    <title>Lokesh Katti | Resume</title>
     <style>
         body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            line-height: 1.6; 
+            font-family: Arial, sans-serif; 
+            line-height: 1.5; 
             max-width: 850px; 
             margin: auto; 
-            padding: 30px; 
-            color: #333; 
-            background-color: #fafafa; 
-        }
-        .resume-card { 
-            background: #fff; 
             padding: 40px; 
-            border: 1px solid #ddd; 
-            border-radius: 4px; 
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+            color: #000; 
+            background-color: #fff; 
         }
         header { 
             text-align: center; 
-            border-bottom: 2px solid #2c3e50; 
-            padding-bottom: 20px; 
-            margin-bottom: 25px; 
+            margin-bottom: 30px; 
         }
-        h1 { margin: 0; color: #2c3e50; text-transform: uppercase; letter-spacing: 1px; }
-        .contact-link { color: #3498db; text-decoration: none; font-weight: bold; }
+        h1 { margin: 0; font-size: 26px; text-transform: uppercase; letter-spacing: 1px; }
+        .contact-info { font-size: 14px; margin-top: 8px; }
+        .contact-info a { color: #000; text-decoration: none; }
         
-        section { margin-bottom: 25px; }
+        section { margin-top: 20px; }
         h2 { 
-            color: #2c3e50; 
-            font-size: 1.3em; 
-            border-bottom: 1px solid #eee; 
-            padding-bottom: 5px; 
-            margin-bottom: 15px;
-            text-transform: uppercase;
+            font-size: 16px; 
+            text-transform: uppercase; 
+            margin-bottom: 8px; 
+            border: none; 
+            font-weight: bold;
+            color: #000;
         }
         
-        .item-row { display: flex; justify-content: space-between; font-weight: bold; }
-        .sub-text { font-style: italic; color: #7f8c8d; margin-bottom: 5px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 5px; }
-        p { margin: 5px 0; }
+        /* Summary Alignment Fix */
+        .summary-text { 
+            text-align: left; /* Ensures natural left alignment */
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .item-row { display: flex; justify-content: space-between; font-weight: bold; margin-top: 12px; }
+        .location-date { text-align: right; font-weight: normal; font-style: italic; }
+        
+        ul { padding-left: 20px; margin: 5px 0; }
+        li { margin-bottom: 4px; font-size: 14px; }
+        p { margin: 4px 0; font-size: 14px; }
+
+        .download-container { text-align: center; margin-top: 20px; }
+        .download-btn {
+            border: 1px solid #000;
+            color: #000;
+            padding: 6px 12px;
+            text-decoration: none;
+            border-radius: 2px;
+            font-size: 12px;
+            transition: 0.3s;
+        }
+        .download-btn:hover { background: #000; color: #fff; }
     </style>
 </head>
 <body>
 
-<div class="resume-card">
     <header>
-        <h1>[LOKESH KATTI]</h1>
-        <p>
-            Kavali, India | +91 9550602264 | 
-            <a href="mailto:your.email@example.com" class="contact-link">lokeshlokesh73494@gmail.com</a>
-        </p>
-        <p>
-            <a href="https://github.com/lokeshkatti" class="contact-link">GitHub</a> | 
-            <a href="https://linkedin.com/in/katti-lokesh" class="contact-link">LinkedIn</a>
-        </p>
+        <h1>LOKESH KATTI</h1>
+        <div class="contact-info">
+            +91 9550602264 | <a href="mailto:lokeshlokesh73494@gmail.com">lokeshlokesh73494@gmail.com</a><br>
+            <a href="https://linkedin.com/in/katti-lokesh">linkedin.com/in/katti-lokesh</a> | 
+            <a href="https://github.com/lokeshkatti">github.com/lokeshkatti</a>
+        </div>
+        <div class="download-container">
+            <a href="Lokesh_SoftwareEngineer_Resume.pdf" download class="download-btn">Download PDF Resume</a>
+        </div>
     </header>
 
     <section>
-        <h2>Summary</h2>
-        <p>
-           Motivated Computer Science graduate with a strong foundation in Python and Java. Passionate about software development and cloud technologies, with hands-on experience in building web applications and deploying them using AWS and CI/CD 
-pipelines. Eager to join a dynamic team and contribute to scalable software solutions.  focused on building scalable cloud solutions and mastering Data Structures and Algorithms for technical roles.
-        </p>
+        <h2>SUMMARY</h2>
+        <p class="summary-text">Motivated Computer Science graduate with a strong foundation in Python and Java. Passionate about software development and cloud technologies, with hands-on experience in building web applications and deploying them using AWS and CI/CD pipelines. Eager to join a dynamic team and contribute to scalable software solutions.</p>
     </section>
 
     <section>
-        <h2>Technical Skills</h2>
+        <h2>SKILLS</h2>
         <ul>
-            <li><strong>Languages:</strong> Python, Java, SQL</li>
-            <li><strong>Cloud/DevOps:</strong> AWS (S3, CloudFront), GitHub Actions, Docker, Kubernetes</li>
-            <li><strong>Tools:</strong> MS Office, Git</li>
+            <li><strong>Languages:</strong> Core Java (OOP), Python, SQL</li>
+            <li><strong>DevOps & Tools:</strong> AWS, Docker, Kubernetes, Jenkins, Git, MS Office</li>
+            <li><strong>Soft Skills:</strong> Good Communication, Leadership, Teamwork</li>
         </ul>
     </section>
 
     <section>
-        <h2>Projects</h2>
-        <div>
-            <div class="item-row">
-                <span>Serverless Cloud Resume Website</span>
-                <span>2026</span>
-            </div>
-            <p class="sub-text">AWS & DevOps Integration</p>
-            <ul>
-                <li>Hosted a high-availability static website using **AWS S3** and **CloudFront**.</li>
-                <li>Implemented a **CI/CD pipeline** via GitHub Actions for automated deployment.</li>
-                <li>Configured **SSL/TLS certificates** for secure HTTPS access.</li>
-            </ul>
+        <h2>PROJECTS</h2>
+        <div class="item-row">
+            <span>AI-Driven Hospital Workforce Scheduling and Management System</span>
         </div>
-        <div>
-            <div class="item-row">
-                <span>AI-Driven Hospital workforce Scheduling and Management System </span>
-                <span>2025</span>
-            </div>
-            <p class="sub-text">Developed a full-stack automated scheduling solution to optimize hospital staff allocation using Python (Flask) and 
-MongoDB.  </p>
-            <ul>
-                <li>Implemented Constraint Satisfaction Problem (CSP) algorithms with Forward Checking and Backtracking to 
-dynamically assign shifts based on availability and preferences.</li>
-                <li>Designed a secure Role-Based Access Control (RBAC) system to allow Admins, Doctors, and Nurses to manage leave 
-requests and shift swaps.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Internship</h2>
-        <div>
-            <div class="item-row">
-                <span>Java Developer Intern</span>
-                <span>[CSEDGE]</span>
-            </div>
-            <p class="sub-text">[Duration, e.g., May 2024 - June 2024]</p>
-            <ul>
-                <li>Developed functional utility applications, including a Scientific Calculator and Number Guessing Game, applying Core 
-Java concepts like control flow and exception handling.</li>
-                <li>Strengthened understanding of Object-Oriented Programming (OOP) principles (Inheritance, Polymorphism, 
-Encapsulation) through modular code design.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Education</h2>
-        <div>
-            <div class="item-row">
-                <span>Bachelor of Technology in Computer Science Engineering with 8.99 CGPA</span>
-                <span>[2021-2025]</span>
-            </div>
-            <p>[Siddharth Institute of Engineering and Technology], Puttur</p>
-        </div>
-        <div>
-            <div class="item-row">
-                <span>Intermediate in MPC with 886 Marks</span>
-                <span>[2019-2021]</span>
-            </div>
-            <p>[Sri Chaithanya Junior College], Kavali</p>
-        </div>
-        <div>
-            <div class="item-row">
-                <span>Secondary School Certificate (SSC) with 9.2 CGPA</span>
-                <span>[2018-2019]</span>
-            </div>
-            <p>[8th Ward Municipal High School], Kavali</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Certifications</h2>
         <ul>
-            <li>IBM Certified-Project Management Fundamentals.</li>
-            <li> NPTEL Certified-The Joy of Computing Using Python.</li>
-            <li> CSEDGE Certified- Java Programming.</li>
+            <li>Developed a full-stack automated scheduling solution using Python (Flask) and MongoDB.</li>
+            <li>Implemented Constraint Satisfaction Problem (CSP) algorithms to dynamically assign shifts.</li>
+            <li>Designed a secure Role-Based Access Control (RBAC) system for staff management.</li>
+        </ul>
+
+        <div class="item-row">
+            <span>Serverless Cloud Resume Website (AWS & DevOps)</span>
+        </div>
+        <ul>
+            <li>Hosted a high-availability static website using AWS S3 and CloudFront.</li>
+            <li>Implemented a CI/CD pipeline via GitHub Actions for automated deployment.</li>
+            <li>Configured SSL/TLS certificates for secure HTTPS access.</li>
         </ul>
     </section>
-</div>
+
+    <section>
+        <h2>EDUCATION</h2>
+        <div class="item-row">
+            <span>B.Tech in Computer Science Engineering</span>
+            <span class="location-date">2021-2025</span>
+        </div>
+        <p>Siddharth Institute of Engineering and Technology, Puttur, AP | CGPA: 8.99</p>
+
+        <div class="item-row">
+            <span>Intermediate (M.P.C)</span>
+            <span class="location-date">2019-2021</span>
+        </div>
+        <p>Sri Chaithanya Junior College, Kavali, AP | Marks: 886</p>
+
+        <div class="item-row">
+            <span>Secondary School Certificate (SSC)</span>
+            <span class="location-date">2018-2019</span>
+        </div>
+        <p>8th Ward Municipal High School, Kavali, AP | CGPA: 9.2</p>
+    </section>
+
+    <section>
+        <h2>CERTIFICATIONS</h2>
+        <ul>
+            <li>IBM Certified - Project Management Fundamentals</li>
+            <li>NPTEL Certified - The Joy of Computing Using Python</li>
+            <li>CSEDGE Certified - Java Programming</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>INTERNSHIP</h2>
+        <div class="item-row">
+            <span>Java Developer Intern | CSEDGE</span>
+            <span class="location-date">May 2024 - Jun 2024</span>
+        </div>
+        <ul>
+            <li>Developed functional utility applications applying Core Java concepts.</li>
+            <li>Strengthened understanding of Object-Oriented Programming (OOP) principles.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>LANGUAGES</h2>
+        <p>English, Telugu</p>
+    </section>
 
 </body>
 </html>
